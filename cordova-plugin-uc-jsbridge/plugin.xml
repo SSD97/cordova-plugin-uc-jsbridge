@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-uc-jsbridge" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>UCJSBridge Plugin</name>
+    <description>Cordova Plugin for JSBridge</description>
+    <license>MIT</license>
+    <keywords>cordova, plugin</keywords>
+
+    <platform name="android">
+        <js-module src="www/UCJSBridge.js" name="UCJSBridge">
+            <clobbers target="window.UCJSBridge" />
+        </js-module>
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="UCJSBridge">
+                <param name="android-package" value="org.apache.cordova.ucjsbridge.UCJSBridge" />
+            </feature>
+        </config-file>
+        <source-file src="src/android/UCJSBridge.java" target-dir="src/org/apache/cordova/ucjsbridge" />
+    </platform>
+</plugin>

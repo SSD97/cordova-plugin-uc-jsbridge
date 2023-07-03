@@ -1,0 +1,15 @@
+{
+    "name": "cordova-plugin-uc-jsbridge",
+    "version": "1.0.0",
+    "description": "Cordova Plugin for JS Bridge",
+    "license": "MIT",
+    "keywords": [
+      "cordova",
+      "plugin"
+    ],
+    "cordova": {
+      "plugins": {
+        "cordova-plugin-uc-jsbridge": {}
+      }
+    }
+  }
